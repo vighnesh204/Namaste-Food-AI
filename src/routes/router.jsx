@@ -5,10 +5,12 @@ import Restaurant from "../pages/Restaurant/Restaurant";
 import Search from "../pages/Search/Search";
 import Cart from "../pages/Cart/Cart";
 import NotFound from "../pages/NotFound/NotFound";
+import AppLayout from "../components/layout/AppLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <AppLayout />,
     children: [
       {
         index: true,
